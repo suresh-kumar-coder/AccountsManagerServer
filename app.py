@@ -49,7 +49,7 @@ app = createApp()
 
 scheduler = BackgroundScheduler()
 if not scheduler.get_job('my_scheduled_job'):
-    scheduler.add_job(func=scheduled_job, trigger="cron", hour=20, minute=28, id='my_scheduled_job')
+    scheduler.add_job(func=scheduled_job, trigger="cron", hour=19, minute=00, id='my_scheduled_job')
 scheduler.start()
 
 if __name__ == "__main__":
